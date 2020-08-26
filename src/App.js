@@ -1,48 +1,32 @@
 import React from 'react';
 import './App.css';
+import TodoList from './TodoList';
+import { QueryRenderer } from 'react-relay';
 import graphql from 'babel-plugin-relay/macro';
-import {
-  RelayEnvironmentProvider,
-  preloadQuery,
-  usePreloadedQuery,
-} from 'react-relay/hooks';
 import RelayEnvironment from './RelayEnvironment';
 
-const { Suspense } = React;
-
-const RepositoryNameQuery = graphql`
-  query AppRepositoryNameQuery {
-    repository(owner: "froggercat", name: "lacona-numi-plugin") {
-      name
-    }
+const AppAllTodosQuery = graphql`
+  query AppAllTodosQuery {
+    ...TodoList_viewer
   }
-`;
+`
 
-const preloadedQuery = preloadQuery(RelayEnvironment, RepositoryNameQuery, {
-  name: "lacona-numi-plugin",
-  owner: "froggercat"
-});
 
 function App(props) {
-  const data = usePreloadedQuery(RepositoryNameQuery, props.preloadedQuery);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>{data.repository.name}</p>
-      </header>
-    </div>
+    <QueryRenderer
+      environment={RelayEnvironment}
+      query={AppAllTodosQuery}
+      render={({error, props}) => {
+        if (error) {
+          return <div>{error.message}</div>
+        } else if (props) {
+          return <TodoList viewer={props} />
+        }
+        return <div>Loading</div>
+      }}
+    />
   );
 }
 
-function AppRoot(props) {
-  return (
-    <RelayEnvironmentProvider environment={RelayEnvironment}>
-      <Suspense fallback={'Loading...'}>
-        <App preloadedQuery={preloadedQuery} />
-      </Suspense>
-    </RelayEnvironmentProvider>
-  );
-}
-
-export default AppRoot;
+export default App;
