@@ -25,7 +25,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "build:css": "postcss src/index.css -o src/main.css",
-    "watch:css": "postcss src/index.css -o src/main.css"
+    "watch:css": "postcss src/index.css -o src/main.css",
+    "chromatic": "npx chromatic --project-token fkorkq6xq6h"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -53,6 +54,7 @@
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",
     "babel-plugin-relay": "^10.0.1",
+    "chromatic": "^5.1.0",
     "graphql": "^15.3.0",
     "postcss-cli": "^7.1.2",
     "react-is": "^16.13.1",

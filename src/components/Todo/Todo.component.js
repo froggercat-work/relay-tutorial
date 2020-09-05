@@ -12,7 +12,7 @@ export default class Todo extends React.Component {
                 <div className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white">
                     {text}
                 </div>
-                <div className="row-start-2 row-span-1 col-start-2 pl-1 font-hairline text-xs text-white">
+                <div className="row-start-2 row-span-1 col-start-2 pl-1 font-hairline text-sm text-white">
                     {user.name}
                 </div>
             </div>
