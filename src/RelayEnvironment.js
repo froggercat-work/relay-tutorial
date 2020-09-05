@@ -4,6 +4,7 @@ import { Environment, Network, Store, RecordSource, Observable } from 'relay-run
 import { SubscriptionClient } from 'subscriptions-transport-ws';
 // import { WebSocketLink } from 'apollo-link-ws'
 
+
 async function fetchRelay(params, variables) {
     console.log(`fetching query ${params.name} with ${JSON.stringify(variables)}`);
     return fetchGraphQL(params.text, variables);
