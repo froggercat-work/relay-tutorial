@@ -1,6 +1,5 @@
 import React from 'react';
-import './App.css';
-import TodoList from './TodoList';
+import TodoList from './components/TodoList';
 import { QueryRenderer, requestSubscription } from 'react-relay';
 import graphql from 'babel-plugin-relay/macro';
 import RelayEnvironment from './RelayEnvironment';
@@ -24,16 +23,6 @@ class App extends React.Component {
                 complete
                 id
                 text
-                user_id
-                user {
-                  id
-                  name
-                  todos_aggregate {
-                    aggregate {
-                      count(distinct: true)
-                    }
-                  }
-                }
               }
             }
           }
@@ -61,7 +50,7 @@ class App extends React.Component {
           } else if (props) {
             return <TodoList viewer={props} />
           }
-          return <div>Loading</div>
+          return <div>Loading(queryRender)</div>
         }}
       />
     );
