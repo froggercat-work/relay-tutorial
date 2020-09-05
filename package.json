@@ -25,8 +25,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "build:css": "postcss src/index.css -o src/main.css",
-    "watch:css": "postcss src/index.css -o src/main.css",
-    "chromatic": "npx chromatic --project-token fkorkq6xq6h"
+    "watch:css": "postcss src/index.css -o src/main.css"
   },
   "eslintConfig": {
     "extends": "react-app"
