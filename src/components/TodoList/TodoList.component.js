@@ -9,16 +9,14 @@ const { Suspense } = React;
 
 export default class TodoList extends React.Component {
     render() {
-        console.log(this)
-        const todos = this.props.viewer.todo_app_todos_connection.edges
-            .map(({ node }) => node);
+        const {viewer:{todo_app_todos_connection:{edges:[...todos]}}} = this.props
         return (
             <RelayEnvironmentProvider environment={RelayEnvironment}>
                 <Suspense fallback={'Loading...'}>
-                    <div class="bg-palette1-xiketic h-screen">
-                        <div class="p-4">
-                            {todos.map( todo =>
-                                <Todo key={todo.__id} todo={todo} />
+                    <div className="bg-palette1-xiketic h-screen overflow-y-scroll">
+                        <div className="p-4">
+                            {todos.map( ({node}) =>
+                                <Todo key={node.__id} todo={node} />
                             )}
                         </div>
                     </div>

@@ -1,0 +1,40 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Todo from './Todo.component';
+
+<Meta title="MDX/Todo" component={Todo} />
+
+export const Template = (args) => <Todo {...args} />
+
+# Todo
+
+Here is a simple styled `Todo` component:
+
+<Canvas>
+    <Story name="incomplete" args={{
+        todo: {
+            complete: false,
+            text: "Incomplete Task",
+            user: {
+                name: "Sondra"
+            }
+        }
+    }}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+Here's a completed task:
+
+<Canvas>
+    <Story name="complete" args={{
+        todo: {
+            complete: true,
+            text: "Completed Task",
+            user: {
+                name: "Your name here"
+            }
+        }
+    }}>
+        {Template.bind({})}
+    </Story>
+</Canvas>

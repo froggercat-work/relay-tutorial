@@ -8,8 +8,8 @@ export default {
 
 const Template = args => <Todo {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
+export const Incomplete = Template.bind({});
+Incomplete.args = {
     todo: {
         complete: false,
         text: "Test Task",
@@ -19,10 +19,10 @@ Default.args = {
     }
 };
 
-export const Checked = Template.bind({});
-Checked.args = {
+export const Complete = Template.bind({});
+Complete.args = {
     todo: {
-        ...Default.args.todo,
+        ...Incomplete.args.todo,
         complete: true
     }
 }

@@ -1,0 +1,58 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import TodoList from './TodoList.component';
+
+<Meta title="MDX/TodoList" component={TodoList} />
+
+export const Template = (args) => <TodoList {...args} />
+
+# TodoList
+
+A `TodoList` is comprised of multiple `Todo` components. They are arranged in a list.
+
+<Canvas>
+    <Story name="A Few Todos" args={{
+        viewer: {
+            todo_app_todos_connection: {
+                edges: Array.from({length: 3}, (_, n) => {
+                    return { 
+                        node: {
+                            complete: !!(n%2),
+                            text: `Basic Task`,
+                            user: {
+                                name: "Sondra"
+                            }
+                        }
+                    }
+                })
+            }
+        }
+    }}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+When you have more of them than fit on a page, you get a scrolling effect.
+
+<Canvas>
+    <Story name="Overflowing Todos" args={{
+        viewer: {
+            todo_app_todos_connection: {
+                edges: Array.from({length: 15}, (_, n) => {
+                    return { 
+                        node: {
+                            complete: !!(n%2),
+                            text: `Basic Task`,
+                            user: {
+                                name: "Sondra"
+                            }
+                        }
+                    }
+                })
+            }
+        }
+    }}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+Of course, no one likes seeing that much work left to be done! 😅
