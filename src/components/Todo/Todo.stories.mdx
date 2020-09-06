@@ -10,31 +10,11 @@ export const Template = (args) => <Todo {...args} />
 Here is a simple styled `Todo` component:
 
 <Canvas>
-    <Story name="incomplete" args={{
-        todo: {
-            complete: false,
-            text: "Incomplete Task",
-            user: {
-                name: "Sondra"
-            }
-        }
-    }}>
-        {Template.bind({})}
-    </Story>
+    <Story id="todo--incomplete" />
 </Canvas>
 
 Here's a completed task:
 
 <Canvas>
-    <Story name="complete" args={{
-        todo: {
-            complete: true,
-            text: "Completed Task",
-            user: {
-                name: "Your name here"
-            }
-        }
-    }}>
-        {Template.bind({})}
-    </Story>
+    <Story id="todo--complete" />
 </Canvas>

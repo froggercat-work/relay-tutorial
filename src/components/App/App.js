@@ -1,8 +1,8 @@
 import React from 'react';
-import TodoList from './components/TodoList';
+import TodoList from '../TodoList';
 import { QueryRenderer, requestSubscription } from 'react-relay';
 import graphql from 'babel-plugin-relay/macro';
-import RelayEnvironment from './RelayEnvironment';
+import RelayEnvironment from '../../env/RelayEnvironment';
 // import { ConnectionHandler } from 'relay-runtime';
 
 const AppAllTodosQuery = graphql`

@@ -3,7 +3,7 @@ import Todo from '../Todo';
 import {
     RelayEnvironmentProvider
 } from 'react-relay/hooks';
-import RelayEnvironment from '../../RelayEnvironment';
+import RelayEnvironment from '../../env/RelayEnvironment';
 
 const { Suspense } = React;
 
