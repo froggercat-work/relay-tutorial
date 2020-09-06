@@ -29,5 +29,3 @@ export default new Environment({
     network: Network.create(fetchRelay, subscribe),
     store: new Store(new RecordSource())
 });
-
-// export default environment
