@@ -54,7 +54,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ### `npm run storybook`
 
-This launches the Storybook tool which contains component tests and specifications.
+This launches the Storybook tool which contains component tests and UI specifications.<br/>
+Storybook maintains local snapshot tests as well - see `npm run test`.
+
+There is a CI/CD process to deploy this repository to [Chromatic](https://www.chromatic.com) to track changes to the UI over time. Chromatic also publishes a Storybook instance for each build.
 
 ## Learn More
 
