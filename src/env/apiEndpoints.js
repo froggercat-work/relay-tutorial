@@ -1,3 +1,5 @@
+// No need to add MOCK endpoints - they're configured in package.json
+
 const REACT_APP_MOCK_SERVER_MODE = process.env.REACT_APP_MOCK_SERVER_MODE;
 
 const REACT_APP_RELAY_API_ENDPOINT = process.env.REACT_APP_RELAY_API_ENDPOINT;

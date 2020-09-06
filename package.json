@@ -19,7 +19,7 @@
     "subscriptions-transport-ws": "^0.9.18"
   },
   "scripts": {
-    "start-mock": "yarn run graphql-mock & REACT_APP_MOCK_SERVER_MODE=1 REACT_APP_MOCK_API_ENDPOINT=\"http://localhost:4000\" REACT_APP_MOCK_SUBSCRIPTION_ENDPOINT=\"ws://NOT_AVAILABLE\" yarn run start",
+    "start-mock": "run-p graphql-mock start-with-mock-link",
     "start": "npm run watch:css && yarn run relay && react-scripts start",
     "build": "npm run watch:css && yarn run relay && react-scripts build",
     "relay": "yarn run relay-compiler",
@@ -29,7 +29,8 @@
     "build-storybook": "build-storybook -s public",
     "build:css": "postcss src/index.css -o src/main.css",
     "watch:css": "postcss src/index.css -o src/main.css",
-    "graphql-mock": "node src/server.js"
+    "graphql-mock": "node src/env/mockServer.js",
+    "start-with-mock-link": "cross-env REACT_APP_MOCK_SERVER_MODE=1 REACT_APP_MOCK_API_ENDPOINT=\"http://localhost:4000\" REACT_APP_MOCK_SUBSCRIPTION_ENDPOINT=\"ws://NOT_AVAILABLE\" yarn run start"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -59,7 +60,9 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-relay": "^10.0.1",
     "chromatic": "^5.1.0",
+    "cross-env": "^7.0.2",
     "graphql": "^15.3.0",
+    "npm-run-all": "^4.1.5",
     "postcss-cli": "^7.1.2",
     "react-is": "^16.13.1",
     "react-test-renderer": "^16.13.1",

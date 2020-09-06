@@ -17,8 +17,4 @@ async function fetchGraphQL(text, variables) {
   return await response.json();
 }
 
-// async function fetchDummyGraphql(text) {
-//   return await server.query(text)
-// }
-
 export default fetchGraphQL;

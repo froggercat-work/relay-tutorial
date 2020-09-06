@@ -46,11 +46,11 @@ class App extends React.Component {
         query={AppAllTodosQuery}
         render={({ error, props }) => {
           if (error) {
-            return <div>{error.message}</div>
+            return <div className="bg-palette1-xiketic text-5xl text-palette1-darkSalmon h-screen">{error.message}</div>
           } else if (props) {
             return <TodoList viewer={props} />
           }
-          return <div>Loading(queryRender)</div>
+          return <div className="bg-palette1-xiketic text-5xl text-palette1-glaucous h-screen">Loading...</div>
         }}
       />
     );
