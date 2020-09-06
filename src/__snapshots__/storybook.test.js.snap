@@ -24,6 +24,7 @@ exports[`Storyshots Todo Complete 1`] = `
 >
   <div
     className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+    id="checkbox"
   >
     ✓
   </div>
@@ -46,6 +47,7 @@ exports[`Storyshots Todo Incomplete 1`] = `
 >
   <div
     className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+    id="checkbox"
   >
     
   </div>
@@ -74,6 +76,7 @@ exports[`Storyshots TodoList A Few Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         
       </div>
@@ -93,6 +96,7 @@ exports[`Storyshots TodoList A Few Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         ✓
       </div>
@@ -112,6 +116,7 @@ exports[`Storyshots TodoList A Few Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         
       </div>
@@ -142,6 +147,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         
       </div>
@@ -161,6 +167,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         ✓
       </div>
@@ -180,6 +187,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         
       </div>
@@ -199,6 +207,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         ✓
       </div>
@@ -218,6 +227,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         
       </div>
@@ -237,6 +247,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         ✓
       </div>
@@ -256,6 +267,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         
       </div>
@@ -275,6 +287,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         ✓
       </div>
@@ -294,6 +307,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         
       </div>
@@ -313,6 +327,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         ✓
       </div>
@@ -332,6 +347,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         
       </div>
@@ -351,6 +367,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         ✓
       </div>
@@ -370,6 +387,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         
       </div>
@@ -389,6 +407,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         ✓
       </div>
@@ -408,6 +427,7 @@ exports[`Storyshots TodoList Many Todos 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         
       </div>
@@ -438,6 +458,7 @@ exports[`Storyshots TodoList Single Todo 1`] = `
     >
       <div
         className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+        id="checkbox"
       >
         
       </div>
