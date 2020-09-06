@@ -1,16 +1,17 @@
-import React from 'react';
-import './Checkbox.css';
+import graphql from 'babel-plugin-relay/macro';
+import { createFragmentContainer } from 'react-relay';
+import Checkbox from './Checkbox.component';
 
-export default class Checkbox extends React.Component {
-    handleClick() {
-        
+export default createFragmentContainer(
+    Checkbox,
+    {
+        todo: graphql`
+            fragment Checkbox_todo on todo_app_todos @argumentDefinitions(
+                where: {type: todo_app_todos_bool_exp}
+            ){
+                complete
+                todo_id
+            }
+        `
     }
-    render() {
-        const { complete } = this.props;
-        return (
-            <div id="checkbox" className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1">
-                    {complete ? "✓" : ""}
-            </div>
-        )
-    }
-}
+);

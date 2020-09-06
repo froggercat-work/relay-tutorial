@@ -8,16 +8,17 @@
 
 /*::
 import type { ReaderFragment } from 'relay-runtime';
+type Checkbox_todo$ref = any;
 import type { FragmentReference } from "relay-runtime";
 declare export opaque type Todo_todo$ref: FragmentReference;
 declare export opaque type Todo_todo$fragmentType: Todo_todo$ref;
 export type Todo_todo = {|
-  +id: string,
-  +complete: boolean,
+  +todo_id: any,
   +text: string,
   +user: {|
     +name: string
   |},
+  +$fragmentRefs: Checkbox_todo$ref,
   +$refType: Todo_todo$ref,
 |};
 export type Todo_todo$data = Todo_todo;
@@ -39,14 +40,7 @@ const node/*: ReaderFragment*/ = {
       "alias": null,
       "args": null,
       "kind": "ScalarField",
-      "name": "id",
-      "storageKey": null
-    },
-    {
-      "alias": null,
-      "args": null,
-      "kind": "ScalarField",
-      "name": "complete",
+      "name": "todo_id",
       "storageKey": null
     },
     {
@@ -73,12 +67,17 @@ const node/*: ReaderFragment*/ = {
         }
       ],
       "storageKey": null
+    },
+    {
+      "args": null,
+      "kind": "FragmentSpread",
+      "name": "Checkbox_todo"
     }
   ],
   "type": "todo_app_todos",
   "abstractKey": null
 };
 // prettier-ignore
-(node/*: any*/).hash = '50b5d3124192901fb278ecc3de401454';
+(node/*: any*/).hash = '7b698bc0a8cf0fb6f237e41da2de6034';
 
 module.exports = node;

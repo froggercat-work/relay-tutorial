@@ -7,12 +7,12 @@ export default createFragmentContainer(
     {
         todo: graphql`
             fragment Todo_todo on todo_app_todos {
-                id,
-                complete,
+                todo_id,
                 text,
                 user {
                     name
-                }
+                },
+                ...Checkbox_todo
             }
         `
     }

@@ -12,8 +12,8 @@ import type { FragmentReference } from "relay-runtime";
 declare export opaque type Checkbox_todo$ref: FragmentReference;
 declare export opaque type Checkbox_todo$fragmentType: Checkbox_todo$ref;
 export type Checkbox_todo = {|
-  +id: string,
   +complete: boolean,
+  +todo_id: any,
   +$refType: Checkbox_todo$ref,
 |};
 export type Checkbox_todo$data = Checkbox_todo;
@@ -26,7 +26,13 @@ export type Checkbox_todo$key = {
 
 
 const node/*: ReaderFragment*/ = {
-  "argumentDefinitions": [],
+  "argumentDefinitions": [
+    {
+      "defaultValue": null,
+      "kind": "LocalArgument",
+      "name": "where"
+    }
+  ],
   "kind": "Fragment",
   "metadata": null,
   "name": "Checkbox_todo",
@@ -35,14 +41,14 @@ const node/*: ReaderFragment*/ = {
       "alias": null,
       "args": null,
       "kind": "ScalarField",
-      "name": "id",
+      "name": "complete",
       "storageKey": null
     },
     {
       "alias": null,
       "args": null,
       "kind": "ScalarField",
-      "name": "complete",
+      "name": "todo_id",
       "storageKey": null
     }
   ],
@@ -50,6 +56,6 @@ const node/*: ReaderFragment*/ = {
   "abstractKey": null
 };
 // prettier-ignore
-(node/*: any*/).hash = 'aa4ae7879ffc57e14c0723a5b17963e1';
+(node/*: any*/).hash = 'd0f72877ff5189f0d8d45541d36070a7';
 
 module.exports = node;

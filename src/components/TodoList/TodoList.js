@@ -7,7 +7,7 @@ export default createFragmentContainer(
     {
         viewer: graphql`
             fragment TodoList_viewer on query_root {
-                todo_app_todos_connection(last: 100, order_by: {id: desc}) @connection(
+                todo_app_todos_connection(last: 100, order_by: {todo_id: desc}) @connection(
                     key: "TodoList_todo_app_todos_connection", 
                     filters: []
                 ) {

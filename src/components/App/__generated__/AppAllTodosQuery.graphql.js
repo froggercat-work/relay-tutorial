@@ -25,8 +25,13 @@ query AppAllTodosQuery {
   ...TodoList_viewer
 }
 
+fragment Checkbox_todo on todo_app_todos {
+  complete
+  todo_id
+}
+
 fragment TodoList_viewer on query_root {
-  todo_app_todos_connection(last: 100, order_by: {id: desc}) {
+  todo_app_todos_connection(last: 100, order_by: {todo_id: desc}) {
     edges {
       node {
         ...Todo_todo
@@ -43,13 +48,13 @@ fragment TodoList_viewer on query_root {
 }
 
 fragment Todo_todo on todo_app_todos {
-  id
-  complete
+  todo_id
   text
   user {
     name
     id
   }
+  ...Checkbox_todo
 }
 */
 
@@ -64,7 +69,7 @@ var v0 = [
     "kind": "Literal",
     "name": "order_by",
     "value": {
-      "id": "desc"
+      "todo_id": "desc"
     }
   }
 ],
@@ -121,12 +126,11 @@ return {
                 "name": "node",
                 "plural": false,
                 "selections": [
-                  (v1/*: any*/),
                   {
                     "alias": null,
                     "args": null,
                     "kind": "ScalarField",
-                    "name": "complete",
+                    "name": "todo_id",
                     "storageKey": null
                   },
                   {
@@ -155,6 +159,14 @@ return {
                     ],
                     "storageKey": null
                   },
+                  {
+                    "alias": null,
+                    "args": null,
+                    "kind": "ScalarField",
+                    "name": "complete",
+                    "storageKey": null
+                  },
+                  (v1/*: any*/),
                   {
                     "alias": null,
                     "args": null,
@@ -201,7 +213,7 @@ return {
             "storageKey": null
           }
         ],
-        "storageKey": "todo_app_todos_connection(last:100,order_by:{\"id\":\"desc\"})"
+        "storageKey": "todo_app_todos_connection(last:100,order_by:{\"todo_id\":\"desc\"})"
       },
       {
         "alias": null,
@@ -215,12 +227,12 @@ return {
     ]
   },
   "params": {
-    "cacheID": "c68fd7d154957e71a016cb0721d1d434",
+    "cacheID": "1f6e4e0ae36f0f2981eeababd07cbcf7",
     "id": null,
     "metadata": {},
     "name": "AppAllTodosQuery",
     "operationKind": "query",
-    "text": "query AppAllTodosQuery {\n  ...TodoList_viewer\n}\n\nfragment TodoList_viewer on query_root {\n  todo_app_todos_connection(last: 100, order_by: {id: desc}) {\n    edges {\n      node {\n        ...Todo_todo\n        id\n        __typename\n      }\n      cursor\n    }\n    pageInfo {\n      hasPreviousPage\n      startCursor\n    }\n  }\n}\n\nfragment Todo_todo on todo_app_todos {\n  id\n  complete\n  text\n  user {\n    name\n    id\n  }\n}\n"
+    "text": "query AppAllTodosQuery {\n  ...TodoList_viewer\n}\n\nfragment Checkbox_todo on todo_app_todos {\n  complete\n  todo_id\n}\n\nfragment TodoList_viewer on query_root {\n  todo_app_todos_connection(last: 100, order_by: {todo_id: desc}) {\n    edges {\n      node {\n        ...Todo_todo\n        id\n        __typename\n      }\n      cursor\n    }\n    pageInfo {\n      hasPreviousPage\n      startCursor\n    }\n  }\n}\n\nfragment Todo_todo on todo_app_todos {\n  todo_id\n  text\n  user {\n    name\n    id\n  }\n  ...Checkbox_todo\n}\n"
   }
 };
 })();
