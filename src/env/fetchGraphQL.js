@@ -1,7 +1,10 @@
-async function fetchGraphQL(text, variables) {
-  const REACT_APP_RELAY_API_ENDPOINT = process.env.REACT_APP_RELAY_API_ENDPOINT;
+import { fetchEndpoint } from './apiEndpoints';
 
-  const response = await fetch(REACT_APP_RELAY_API_ENDPOINT, {
+console.log(fetchEndpoint)
+
+async function fetchGraphQL(text, variables) {
+
+  const response = await fetch(fetchEndpoint, {
     method: 'POST',
     headers: {
       Accept: 'application/json',
@@ -15,5 +18,9 @@ async function fetchGraphQL(text, variables) {
 
   return await response.json();
 }
+
+// async function fetchDummyGraphql(text) {
+//   return await server.query(text)
+// }
 
 export default fetchGraphQL;
