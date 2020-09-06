@@ -1,5 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Checkbox Complete 1`] = `
+<div
+  className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+  id="checkbox"
+>
+  ✓
+</div>
+`;
+
+exports[`Storyshots Checkbox Incomplete 1`] = `
+<div
+  className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+  id="checkbox"
+>
+  
+</div>
+`;
+
 exports[`Storyshots Todo Complete 1`] = `
 <div
   className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
