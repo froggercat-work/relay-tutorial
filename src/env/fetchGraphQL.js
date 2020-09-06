@@ -1,7 +1,5 @@
 import { fetchEndpoint } from './apiEndpoints';
 
-console.log(fetchEndpoint)
-
 async function fetchGraphQL(text, variables) {
 
   const response = await fetch(fetchEndpoint, {
