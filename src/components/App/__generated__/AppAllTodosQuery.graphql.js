@@ -48,7 +48,6 @@ fragment TodoList_viewer on query_root {
 }
 
 fragment Todo_todo on todo_app_todos {
-  todo_id
   text
   user {
     name
@@ -130,13 +129,6 @@ return {
                     "alias": null,
                     "args": null,
                     "kind": "ScalarField",
-                    "name": "todo_id",
-                    "storageKey": null
-                  },
-                  {
-                    "alias": null,
-                    "args": null,
-                    "kind": "ScalarField",
                     "name": "text",
                     "storageKey": null
                   },
@@ -164,6 +156,13 @@ return {
                     "args": null,
                     "kind": "ScalarField",
                     "name": "complete",
+                    "storageKey": null
+                  },
+                  {
+                    "alias": null,
+                    "args": null,
+                    "kind": "ScalarField",
+                    "name": "todo_id",
                     "storageKey": null
                   },
                   (v1/*: any*/),
@@ -227,12 +226,12 @@ return {
     ]
   },
   "params": {
-    "cacheID": "1f6e4e0ae36f0f2981eeababd07cbcf7",
+    "cacheID": "11815e3ac360f758706ea43a0cb02e7f",
     "id": null,
     "metadata": {},
     "name": "AppAllTodosQuery",
     "operationKind": "query",
-    "text": "query AppAllTodosQuery {\n  ...TodoList_viewer\n}\n\nfragment Checkbox_todo on todo_app_todos {\n  complete\n  todo_id\n}\n\nfragment TodoList_viewer on query_root {\n  todo_app_todos_connection(last: 100, order_by: {todo_id: desc}) {\n    edges {\n      node {\n        ...Todo_todo\n        id\n        __typename\n      }\n      cursor\n    }\n    pageInfo {\n      hasPreviousPage\n      startCursor\n    }\n  }\n}\n\nfragment Todo_todo on todo_app_todos {\n  todo_id\n  text\n  user {\n    name\n    id\n  }\n  ...Checkbox_todo\n}\n"
+    "text": "query AppAllTodosQuery {\n  ...TodoList_viewer\n}\n\nfragment Checkbox_todo on todo_app_todos {\n  complete\n  todo_id\n}\n\nfragment TodoList_viewer on query_root {\n  todo_app_todos_connection(last: 100, order_by: {todo_id: desc}) {\n    edges {\n      node {\n        ...Todo_todo\n        id\n        __typename\n      }\n      cursor\n    }\n    pageInfo {\n      hasPreviousPage\n      startCursor\n    }\n  }\n}\n\nfragment Todo_todo on todo_app_todos {\n  text\n  user {\n    name\n    id\n  }\n  ...Checkbox_todo\n}\n"
   }
 };
 })();

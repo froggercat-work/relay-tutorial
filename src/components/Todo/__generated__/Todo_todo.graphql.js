@@ -13,7 +13,6 @@ import type { FragmentReference } from "relay-runtime";
 declare export opaque type Todo_todo$ref: FragmentReference;
 declare export opaque type Todo_todo$fragmentType: Todo_todo$ref;
 export type Todo_todo = {|
-  +todo_id: any,
   +text: string,
   +user: {|
     +name: string
@@ -36,13 +35,6 @@ const node/*: ReaderFragment*/ = {
   "metadata": null,
   "name": "Todo_todo",
   "selections": [
-    {
-      "alias": null,
-      "args": null,
-      "kind": "ScalarField",
-      "name": "todo_id",
-      "storageKey": null
-    },
     {
       "alias": null,
       "args": null,
@@ -78,6 +70,6 @@ const node/*: ReaderFragment*/ = {
   "abstractKey": null
 };
 // prettier-ignore
-(node/*: any*/).hash = '7b698bc0a8cf0fb6f237e41da2de6034';
+(node/*: any*/).hash = '92c5c9bc1941daefe328c5bb01e051ff';
 
 module.exports = node;

@@ -1,12 +1,20 @@
 import React from 'react';
 import Todo from './Todo.component';
+import { RelayEnvironmentProvider } from 'react-relay/hooks';
+import { createMockEnvironment } from 'relay-test-utils';
+
 
 export default {
     component: Todo,
     title: 'Todo'
 }
 
-const Template = args => <Todo {...args} />;
+// Since we have nested fragments we need a relay env to propogate data to children
+// (Todo includes child Checkbox)
+const Template = args =>
+    <RelayEnvironmentProvider environment={createMockEnvironment()}>
+        <Todo {...args} />
+    </RelayEnvironmentProvider>;
 
 export const Incomplete = Template.bind({});
 Incomplete.args = {

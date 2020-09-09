@@ -2,8 +2,9 @@
 
 exports[`Storyshots Checkbox Complete 1`] = `
 <div
-  className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+  className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
   id="checkbox"
+  onClick={[Function]}
 >
   ✓
 </div>
@@ -11,8 +12,9 @@ exports[`Storyshots Checkbox Complete 1`] = `
 
 exports[`Storyshots Checkbox Incomplete 1`] = `
 <div
-  className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
+  className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
   id="checkbox"
+  onClick={[Function]}
 >
   
 </div>
@@ -23,10 +25,15 @@ exports[`Storyshots Todo Complete 1`] = `
   className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
 >
   <div
-    className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-    id="checkbox"
+    className="relative row-span-2 col-span-1 mr-2"
   >
-    ✓
+    <div
+      className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+      id="checkbox"
+      onClick={[Function]}
+    >
+      ✓
+    </div>
   </div>
   <div
     className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -46,10 +53,15 @@ exports[`Storyshots Todo Incomplete 1`] = `
   className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
 >
   <div
-    className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-    id="checkbox"
+    className="relative row-span-2 col-span-1 mr-2"
   >
-    
+    <div
+      className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+      id="checkbox"
+      onClick={[Function]}
+    >
+      
+    </div>
   </div>
   <div
     className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -75,10 +87,15 @@ exports[`Storyshots TodoList A Few Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -95,10 +112,15 @@ exports[`Storyshots TodoList A Few Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        ✓
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          ✓
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -115,10 +137,15 @@ exports[`Storyshots TodoList A Few Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -146,10 +173,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -166,10 +198,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        ✓
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          ✓
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -186,10 +223,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -206,10 +248,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        ✓
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          ✓
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -226,10 +273,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -246,10 +298,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        ✓
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          ✓
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -266,10 +323,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -286,10 +348,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        ✓
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          ✓
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -306,10 +373,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -326,10 +398,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        ✓
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          ✓
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -346,10 +423,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -366,10 +448,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        ✓
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          ✓
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -386,10 +473,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -406,10 +498,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        ✓
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          ✓
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -426,10 +523,15 @@ exports[`Storyshots TodoList Many Todos 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"
@@ -457,10 +559,15 @@ exports[`Storyshots TodoList Single Todo 1`] = `
       className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24"
     >
       <div
-        className="relative rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8 mr-2 row-span-2 col-span-1"
-        id="checkbox"
+        className="relative row-span-2 col-span-1 mr-2"
       >
-        
+        <div
+          className="rounded-full flex justify-center items-center bg-palette1-glaucous h-8 w-8"
+          id="checkbox"
+          onClick={[Function]}
+        >
+          
+        </div>
       </div>
       <div
         className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white"

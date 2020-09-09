@@ -10,10 +10,14 @@ const Template = args => <Checkbox {...args} />;
 
 export const Incomplete = Template.bind({});
 Incomplete.args = {
-    complete: false
+    todo: {
+        complete: false
+    }
 };
 
 export const Complete = Template.bind({});
 Complete.args = {
-    complete: true
+    todo: {
+        complete: true
+    }
 }

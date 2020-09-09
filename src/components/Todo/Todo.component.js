@@ -1,15 +1,15 @@
 import React from 'react';
 import './Todo.css';
 import Checkbox from '../Checkbox';
-import TodoStatusMutation from '../../mutations/TodoStatusMutations';
 
 export default class Todo extends React.Component {
     render() {
-        const { todo: { todo_id, complete, text, user } } = this.props;
-        const checkBoxValues = {"todo": {"todo_id": todo_id, "complete": complete}};
+        const { todo: { text, user } } = this.props;
         return (
             <div className="bg-palette1-darkJungleGreen h-16 border-0 border-palette1-darkSalmon grid mb-3 rounded-bl-full items-center justify-start rounded-r-full pl-2 grid-rows-2 grid-cols-24">
-                <Checkbox {...this.props}/>
+                <div className="relative row-span-2 col-span-1 mr-2">
+                    <Checkbox {...this.props} />
+                </div>
                 <div className="row-span-1 col-start-2 pl-1 font-hairline text-xl text-white">
                     {text}
                 </div>
